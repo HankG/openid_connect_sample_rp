@@ -1,4 +1,4 @@
-class CreateProviders < ActiveRecord::Migration
+class CreateProviders < ActiveRecord::Migration[5.1]
   def self.up
     create_table :providers do |t|
       t.belongs_to :account

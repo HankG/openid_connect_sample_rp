@@ -7,7 +7,6 @@ class ApplicationController < ActionController::Base
     Rack::OAuth2::Client::Error,
     OpenIDConnect::Exception,
     Nonce::Exception,
-    MultiJson::LoadError,
     OpenSSL::SSL::SSLError
   ) do |e|
     flash[:error] = if e.message.length > 2000

@@ -1,10 +1,9 @@
 source 'http://rubygems.org'
 
-gem 'rails', '~>3.2'
+gem 'rails', '5.1.6'
 gem 'jquery-rails'
 gem 'openid_connect'
 gem 'html5_validators'
-gem 'squeel'
 gem 'rest-client'
 
 group :development, :test do

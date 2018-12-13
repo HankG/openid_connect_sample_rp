@@ -1,4 +1,4 @@
-class CreateOpenIds < ActiveRecord::Migration
+class CreateOpenIds < ActiveRecord::Migration[5.1]
   def self.up
     create_table :open_ids do |t|
       t.belongs_to :account, :provider

@@ -8,7 +8,7 @@ class ProvidersController < ApplicationController
   end
 
   def create
-    provider = Provider.discover! params[:host]
+    provider = Provider.discover! params.require(:host)
     unless provider.registered?
       provider.register! provider_open_id_url(provider)
     end

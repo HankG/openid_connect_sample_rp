@@ -1,5 +1,5 @@
 class AccountsController < ApplicationController
-  before_filter :require_authentication
+  before_action :require_authentication
 
   def show
     @open_id = current_account.open_id
